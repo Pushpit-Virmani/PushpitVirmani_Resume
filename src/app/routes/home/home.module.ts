@@ -1,15 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { MatButtonModule } from '@angular/material/button';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './components/home/home.component';
-
+import { ExternalLinksComponent } from './components/external-links/external-links.component';
 
 @NgModule({
-  declarations: [HomeComponent],
+  declarations: [HomeComponent, ExternalLinksComponent],
   imports: [
     CommonModule,
-    HomeRoutingModule
-  ]
+    HomeRoutingModule,
+    FontAwesomeModule,
+    MatButtonModule,
+  ],
 })
-export class HomeModule { }
+export class HomeModule {}
