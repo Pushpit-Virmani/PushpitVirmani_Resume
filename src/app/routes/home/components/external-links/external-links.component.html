@@ -1,0 +1,25 @@
+<div class="d-flex">
+  <div class="mr-sm">
+    <a
+      mat-raised-button
+      pvExternalLink
+      color="accent"
+      href="{{ linkedInUrl }}"
+    >
+      <fa-icon [icon]="faLinkedin" size="lg" class="mr-xs"></fa-icon>
+      <span>LinkedIn</span>
+    </a>
+  </div>
+
+  <div>
+    <a
+      mat-raised-button
+      color="accent"
+      href="{{ resumeUrl }}"
+      download="{{ resumeFileName }}"
+    >
+      <mat-icon class="mr-xs">download</mat-icon>
+      <span>Résumé</span>
+    </a>
+  </div>
+</div>
