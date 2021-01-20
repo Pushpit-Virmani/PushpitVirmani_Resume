@@ -11,6 +11,8 @@ import { environment } from '@pv-env';
 export class ExternalLinksComponent implements OnInit {
   faLinkedin = faLinkedin;
   linkedInUrl = environment.linkedInUrl;
+  resumeUrl = environment.resume.url;
+  resumeFileName = environment.resume.filename;
 
   constructor() {}
 
