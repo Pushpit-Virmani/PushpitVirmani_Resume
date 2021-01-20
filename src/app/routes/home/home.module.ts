@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { HyperlinkModule } from '@pv-modules';
@@ -15,6 +16,7 @@ import { ExternalLinksComponent } from './components/external-links/external-lin
     HomeRoutingModule,
     FontAwesomeModule,
     MatButtonModule,
+    MatIconModule,
     HyperlinkModule,
   ],
 })
