@@ -20,6 +20,8 @@ export class AppComponent implements OnInit {
       .subscribe((result) => {
         if (result.matches) {
           this.isSmallScreen = true;
+        } else {
+          this.isSmallScreen = false;
         }
       });
   }
