@@ -7,6 +7,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -24,6 +25,7 @@ import { SidenavLinksComponent } from './components/sidenav-links/sidenav-links.
     MatToolbarModule,
     MatIconModule,
     MatListModule,
+    MatTooltipModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
