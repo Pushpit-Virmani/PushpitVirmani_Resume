@@ -1,49 +1,68 @@
-<main class="h-100 w-100 xs-w-50 d-flex flex-col justify-content-center">
-  <header class="mat-display-3">
-    <div class="mat-text-primary">Hello.</div>
-    <div>
-      I am
-      <strong class="mat-text-primary">Pushpit Virmani</strong>.
-    </div>
-    <div class="mat-body mt-l">
-      <pv-external-links></pv-external-links>
-    </div>
-  </header>
+<main class="flex mt-24 md:mt-48">
+  <section class="w-full md:w-3/5 flex flex-col justify-center">
+    <header class="mat-display-3">
+      <div class="mat-text-primary">Hello.</div>
+      <div>
+        I am
+        <strong class="mat-text-primary">Pushpit Virmani</strong>.
+      </div>
+      <div class="mat-body mt-l">
+        <pv-external-links></pv-external-links>
+      </div>
+    </header>
 
-  <article>
-    <p>
-      I am a former Software Engineer and tech enthusiast. I have experienced
-      the workings of startups as well as those of a tech-giant like
-      <a pvExternalLink href="https://www.infosys.com/" class="mat-text-primary"
-        >Infosys Ltd.</a
-      >
-      firsthand. I have always performed well with cross-functioning teams and I
-      value my ability to excel as a team player. I have worked for 22 months at
-      Infosys Ltd. as a Systems Engineer and was part of back-end development
-      team. Thanks to my time-management and managerial skills, I was
-      instrumental in the success of my project and earned the commendation of
-      my client,
-      <a
-        pvExternalLink
-        href="https://www.esteelauder.com/"
-        class="mat-text-primary"
-      >
-        Estée Lauder</a
-      >.
-    </p>
-    <p>
-      To further my managerial growth after gaining industry experience, I am
-      now enrolled in the
-      <a
-        pvExternalLink
-        href="https://escp.eu/programmes/master-in-management"
-        class="mat-text-primary"
-        >Masters in Management</a
-      >
-      program at
-      <a pvExternalLink href="https://escp.eu/paris" class="mat-text-primary"
-        >ESCP, Paris Campus</a
-      >.
-    </p>
-  </article>
+    <article class="text-justify">
+      <p>
+        I am a former Software Engineer and tech enthusiast. I have experienced
+        the workings of startups as well as those of a tech-giant like
+        <a
+          pvExternalLink
+          href="https://www.infosys.com/"
+          class="mat-text-primary"
+          >Infosys Ltd.</a
+        >
+        firsthand. I have always performed well with cross-functioning teams and
+        I value my ability to excel as a team player. I have worked for 22
+        months at Infosys Ltd. as a Systems Engineer and was part of back-end
+        development team. Thanks to my time-management and managerial skills, I
+        was instrumental in the success of my project and earned the
+        commendation of my client,
+        <a
+          pvExternalLink
+          href="https://www.esteelauder.com/"
+          class="mat-text-primary"
+        >
+          Estée Lauder</a
+        >.
+      </p>
+      <p>
+        To further my managerial growth after gaining industry experience, I am
+        now enrolled in the
+        <a
+          pvExternalLink
+          href="https://escp.eu/programmes/master-in-management"
+          class="mat-text-primary"
+          >Masters in Management</a
+        >
+        program at
+        <a pvExternalLink href="https://escp.eu/paris" class="mat-text-primary"
+          >ESCP, Paris Campus</a
+        >.
+      </p>
+    </article>
+  </section>
+  <section class="flex-grow flex flex-col justify-center" *ngIf="showImage">
+    <picture>
+      <source
+        media="(min-width: {{ screens.lg }})"
+        srcset="assets/images/pushpit_photo.jpeg"
+      />
+      <img
+        src="assets/images/pushpit_photo_low_res.jpeg"
+        class="rounded-full h-48 w-48 mx-auto"
+        height="192"
+        width="192"
+      />
+    </picture>
+  </section>
 </main>

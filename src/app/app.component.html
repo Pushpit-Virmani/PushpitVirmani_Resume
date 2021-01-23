@@ -1,7 +1,25 @@
+<mat-toolbar *ngIf="isSmallScreen" color="primary" class="fixed z-50">
+  <mat-toolbar-row>
+    <button
+      mat-icon-button
+      class="focus:outline-none"
+      aria-label="Menu"
+      (click)="sidenav.toggle()"
+    >
+      <mat-icon>menu</mat-icon>
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>
+
 <mat-sidenav-container class="h-100">
-  <mat-sidenav mode="side" opened>Sidenav</mat-sidenav>
+  <mat-sidenav
+    #sidenav
+    [mode]="isSmallScreen ? 'over' : 'side'"
+    [opened]="!isSmallScreen"
+    >Sidenav</mat-sidenav
+  >
   <mat-sidenav-content>
-    <main class="px-l h-100">
+    <main class="px-l">
       <router-outlet></router-outlet>
     </main>
   </mat-sidenav-content>
