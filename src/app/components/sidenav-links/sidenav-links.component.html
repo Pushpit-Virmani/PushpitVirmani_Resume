@@ -1,5 +1,5 @@
 <mat-nav-list class="h-full flex flex-col justify-center">
-  <mat-list-item>
+  <mat-list-item [matTooltip]="'Home'" [matTooltipPosition]="'right'">
     <a [routerLink]="['/home']" class="inline-block">
       <mat-icon
         [color]="'primary'"
@@ -13,7 +13,7 @@
       </span>
     </a>
   </mat-list-item>
-  <mat-list-item>
+  <mat-list-item [matTooltip]="'My Work'" [matTooltipPosition]="'right'">
     <a [routerLink]="['/work']" class="inline-block">
       <mat-icon
         [color]="'primary'"
@@ -27,7 +27,7 @@
       </span>
     </a>
   </mat-list-item>
-  <mat-list-item>
+  <mat-list-item [matTooltip]="'My Skills'" [matTooltipPosition]="'right'">
     <a [routerLink]="['/skills']" class="inline-block">
       <mat-icon
         [color]="'primary'"
@@ -41,7 +41,7 @@
       </span>
     </a>
   </mat-list-item>
-  <mat-list-item>
+  <mat-list-item [matTooltip]="'Contact Me'" [matTooltipPosition]="'right'">
     <a [routerLink]="['/contact']" class="inline-block">
       <mat-icon
         [color]="'primary'"
