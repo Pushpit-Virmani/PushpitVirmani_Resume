@@ -1,0 +1,58 @@
+<mat-nav-list class="h-full flex flex-col justify-center">
+  <mat-list-item>
+    <a [routerLink]="['/home']" class="inline-block">
+      <mat-icon
+        [color]="'primary'"
+        class="align-middle"
+        [ngClass]="{ 'mr-4': shouldDisplayLabels }"
+      >
+        home
+      </mat-icon>
+      <span *ngIf="shouldDisplayLabels" class="align-bottom mat-body-2 mr-6">
+        Home
+      </span>
+    </a>
+  </mat-list-item>
+  <mat-list-item>
+    <a [routerLink]="['/work']" class="inline-block">
+      <mat-icon
+        [color]="'primary'"
+        class="align-middle"
+        [ngClass]="{ 'mr-4': shouldDisplayLabels }"
+      >
+        work
+      </mat-icon>
+      <span *ngIf="shouldDisplayLabels" class="align-bottom mat-body-2 mr-6">
+        My Work
+      </span>
+    </a>
+  </mat-list-item>
+  <mat-list-item>
+    <a [routerLink]="['/skills']" class="inline-block">
+      <mat-icon
+        [color]="'primary'"
+        class="align-middle"
+        [ngClass]="{ 'mr-4': shouldDisplayLabels }"
+      >
+        construction
+      </mat-icon>
+      <span *ngIf="shouldDisplayLabels" class="align-bottom mat-body-2 mr-6">
+        My Skills
+      </span>
+    </a>
+  </mat-list-item>
+  <mat-list-item>
+    <a [routerLink]="['/contact']" class="inline-block">
+      <mat-icon
+        [color]="'primary'"
+        class="align-middle"
+        [ngClass]="{ 'mr-4': shouldDisplayLabels }"
+      >
+        contact_mail
+      </mat-icon>
+      <span *ngIf="shouldDisplayLabels" class="align-bottom mat-body-2 mr-6">
+        Contact Me
+      </span>
+    </a>
+  </mat-list-item>
+</mat-nav-list>
