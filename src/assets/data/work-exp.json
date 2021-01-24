@@ -1,0 +1,35 @@
+[
+  {
+    "id": 3,
+    "company": {
+      "name": "Infosys Ltd.",
+      "url": "https://www.infosys.com/"
+    },
+    "designation": "Systems Engineer (Java Back-end Developer)",
+    "startDate": "1 July 2018",
+    "endDate": "1 May 2020",
+    "contributions": []
+  },
+  {
+    "id": 2,
+    "company": {
+      "name": "Infosys Ltd.",
+      "url": "https://www.infosys.com/"
+    },
+    "designation": "Software Development Intern",
+    "startDate": "2 Feb 2018",
+    "endDate": "5 May 2018",
+    "contributions": []
+  },
+  {
+    "id": 1,
+    "company": {
+      "name": "Rocket Test Tailor",
+      "url": "https://www.infosys.com/"
+    },
+    "designation": "Intern",
+    "startDate": "1 May 2017",
+    "endDate": "1 July 2017",
+    "contributions": []
+  }
+]
