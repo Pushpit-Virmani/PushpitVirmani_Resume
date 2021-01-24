@@ -1,5 +1,15 @@
+@import "../../node_modules/@angular/material/_theming.scss";
 @import "_mixins.scss";
 @import "_variables.scss";
+@import "_theme.scss";
+
+.mat-text-primary {
+  color: mat-color($primary) !important;
+}
+
+.mat-app-background-secondary-dark {
+  background-color: map-get($mat-dark-theme-background, card);
+}
 
 // Padding
 .px-l {
