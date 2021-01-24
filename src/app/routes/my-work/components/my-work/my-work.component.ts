@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { WorkExpService } from '@pv-api';
+import { APIResponse, WorkExpItem } from '@pv-models';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'pv-my-work',
@@ -6,7 +9,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./my-work.component.scss'],
 })
 export class MyWorkComponent implements OnInit {
-  constructor() {}
+  workExp$?: Observable<APIResponse<WorkExpItem[]>>;
 
-  ngOnInit(): void {}
+  constructor(private workExpApi: WorkExpService) {}
+
+  ngOnInit(): void {
+    this.workExp$ = this.workExpApi.getWorkExp();
+  }
 }
