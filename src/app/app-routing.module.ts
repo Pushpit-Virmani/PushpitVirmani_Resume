@@ -7,6 +7,10 @@ const routes: Routes = [
     loadChildren: () =>
       import('./routes/home/home.module').then((u) => u.HomeModule),
   },
+  {
+    path: 'home',
+    redirectTo: '',
+  },
 ];
 
 @NgModule({
