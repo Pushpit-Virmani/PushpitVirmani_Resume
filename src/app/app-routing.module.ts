@@ -8,6 +8,11 @@ const routes: Routes = [
       import('./routes/home/home.module').then((u) => u.HomeModule),
   },
   {
+    path: 'myWork',
+    loadChildren: () =>
+      import('./routes/my-work/my-work.module').then((u) => u.MyWorkModule),
+  },
+  {
     path: 'home',
     redirectTo: '',
   },
