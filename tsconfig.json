@@ -15,8 +15,10 @@
     "lib": ["es2018", "dom"],
     "paths": {
       "@pv-env": ["src/environments/environment"],
+      "@pv-api": ["src/app/api/index.ts"],
+      "@pv-models": ["src/app/models/index.ts"],
       "@pv-modules": ["src/app/modules/index.ts"],
-      "@pv-tailwind-config": ["./tailwind.config.js"],
+      "@pv-tailwind-config": ["./tailwind.config.js"]
     }
   }
 }
