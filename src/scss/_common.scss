@@ -7,6 +7,10 @@
   color: mat-color($primary) !important;
 }
 
+.mat-text-accent {
+  color: mat-color($accent) !important;
+}
+
 .mat-app-background-secondary-dark {
   background-color: map-get($mat-dark-theme-background, card);
 }
