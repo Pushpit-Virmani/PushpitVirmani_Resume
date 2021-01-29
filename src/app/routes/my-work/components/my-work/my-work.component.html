@@ -1,11 +1,14 @@
-<header>
-  <h1 class="mat-display-3 mat-text-primary">My Work Experience</h1>
+<header class="mt-16">
+  <h1 class="mat-display-2 mat-text-primary">Work Experience</h1>
 </header>
 
 <main class="mat-body">
   <ng-container *ngIf="workExp$ | async as workExp; else loading">
     <ng-container *ngIf="workExp.data && !workExp.error; else error">
-      <code>{{ workExp.data | json }}</code>
+      <pv-exp-item
+        *ngFor="let expItem of workExp.data"
+        [expItem]="expItem"
+      ></pv-exp-item>
     </ng-container>
 
     <ng-template #error>Could not fetch work experience.</ng-template>
