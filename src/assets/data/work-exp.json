@@ -1,0 +1,65 @@
+[
+  {
+    "id": 4,
+    "company": {
+      "name": "Shine Projects",
+      "url": "https://www.shineprojects.in/"
+    },
+    "designation": "Product Manager Intern",
+    "startDate": "1 October 2020",
+    "endDate": "1 December 2020",
+    "contributions": [
+      "Responsible for defining product strategy and road map for the EdTech startup.",
+      "Responsible for assigning daily deliverables to the team and handling daily meetings.",
+      "Performed market research, industry analysis and set pricing to meet revenue goals.",
+      "Formulated KPI-based scorecard to benchmark the competitors for defining strategy.",
+      "Increased the monthly revenue by 20% by leading the expansion plan in different cities."
+    ]
+  },
+  {
+    "id": 3,
+    "company": {
+      "name": "Infosys Ltd.",
+      "url": "https://www.infosys.com/"
+    },
+    "designation": "Systems Engineer (Java Back-end Developer)",
+    "startDate": "1 July 2018",
+    "endDate": "1 May 2020",
+    "contributions": [
+      "Responsible for backend development in a diverse team spread across the globe.",
+      "Led a small team and was responsible for managing their deliverables and user stories.",
+      "Developed 100+ robust and efficient microservices which were among the highest in our team.",
+      "Facilitated seamless information exchange between frontend and backend development teams.",
+      "Automated the process of regression testing thereby increasing the efficiency of project from 60-80%."
+    ]
+  },
+  {
+    "id": 2,
+    "company": {
+      "name": "Infosys Ltd.",
+      "url": "https://www.infosys.com/"
+    },
+    "designation": "Software Development Intern",
+    "startDate": "2 Feb 2018",
+    "endDate": "5 May 2018",
+    "contributions": [
+      "Underwent training covering Python, MySQL, Java and corporate ethics.",
+      "The single page web app was developed by using Angular, Java and MySQL.",
+      "Completed training with 89% and was among the top interns in high performer category."
+    ]
+  },
+  {
+    "id": 1,
+    "company": {
+      "name": "Rocket Test Tailor",
+      "url": "https://www.infosys.com/"
+    },
+    "designation": "Intern (Qt/QML Developer)",
+    "startDate": "1 May 2017",
+    "endDate": "1 July 2017",
+    "contributions": [
+      "Part of development team and reported directly to the CEO. The application was for highly secure communication for android and desktop platforms for a German client.",
+      "Developed an application called Tuition Point, a platform to facilitate students in finding teachers for specific subjects based on various relevant filtering questions and ratings."
+    ]
+  }
+]

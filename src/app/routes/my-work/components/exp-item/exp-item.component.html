@@ -1,0 +1,21 @@
+<div class="mb-16">
+  <h1 class="mat-headline mat-text-primary">{{ expItem.designation }}</h1>
+  <h2 class="m-0 mat-title">
+    <a pvExternalLink href="{{ expItem.company.url }}">
+      {{ expItem.company.name }}
+    </a>
+  </h2>
+  <h3 class="mat-subheading-2">
+    {{ expItem.startDate | date: "MMM, y" }} -
+    {{ expItem.endDate | date: "MMM y" }}
+  </h3>
+  <ng-container *ngIf="expItem.contributions.length">
+    <div class="mat-body-2">Contributions</div>
+    <ul class="list-disc ml-4">
+      <li
+        *ngFor="let contribution of expItem.contributions"
+        [innerHTML]="contribution"
+      ></li>
+    </ul>
+  </ng-container>
+</div>
