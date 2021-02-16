@@ -1,7 +1,9 @@
+<!-- TODO: Wrap everything inside a section. -->
 <header class="mt-16">
   <h1 class="mat-display-2 mat-text-primary">Work Experience</h1>
 </header>
 
+<!-- TODO: Remove this main. Change it to article or something. -->
 <main class="mat-body">
   <ng-container *ngIf="workExp$ | async as workExp; else loading">
     <ng-container *ngIf="workExp.data && !workExp.error; else error">
