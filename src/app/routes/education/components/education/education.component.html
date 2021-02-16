@@ -1,7 +1,56 @@
 <section class="mt-16">
-    <h1 class="mat-display-2 mat-text-primary">My Education</h1>
+  <h1 class="mat-display-2 mat-text-primary">My Education</h1>
 
-    <article>
+  <article>
+    <ng-container *ngIf="education$ | async as education; else loading">
+      <ng-container *ngIf="education.data && !education.error; else error">
+        <!-- <pv-exp-item
+          *ngFor="let educationItem of education.data"
+          [expItem]="educationItem"
+        ></pv-exp-item> -->
+        <pre><code>{{education.data | json}}</code></pre>
+      </ng-container>
 
-    </article>
+      <ng-template #error>Could not fetch education details.</ng-template>
+    </ng-container>
+
+    <ng-template #loading>
+      <div
+        class="mat-app-background-secondary-dark rounded-full anim-fade-in-out md:w-1/2"
+      >
+        <h1 class="opacity-0 mat-headline">LOADING...</h1>
+      </div>
+      <div
+        class="mat-app-background-secondary-dark rounded-full anim-fade-in-out w-1/2 md:w-1/3"
+      >
+        <h2 class="opacity-0 mat-title">LOADING...</h2>
+      </div>
+      <div
+        class="mat-app-background-secondary-dark rounded-full anim-fade-in-out w-1/3 md:w-1/4"
+      >
+        <div class="opacity-0 mat-body-2">LOADING...</div>
+      </div>
+
+      <section class="mt-16">
+        <ng-container *ngTemplateOutlet="loadingListItem"></ng-container>
+        <ng-container *ngTemplateOutlet="loadingListItem"></ng-container>
+        <ng-container *ngTemplateOutlet="loadingListItem"></ng-container>
+
+        <ng-template #loadingListItem>
+          <div class="mb-4 flex md:w-1/2">
+            <div
+              class="mat-app-background-secondary-dark rounded-full anim-fade-in-out"
+            >
+              <div class="opacity-0 mat-body-2">ABC</div>
+            </div>
+            <div
+              class="mat-app-background-secondary-dark rounded-full anim-fade-in-out ml-4 flex-grow"
+            >
+              <div class="opacity-0 mat-body-2">LOADING...</div>
+            </div>
+          </div>
+        </ng-template>
+      </section>
+    </ng-template>
+  </article>
 </section>
