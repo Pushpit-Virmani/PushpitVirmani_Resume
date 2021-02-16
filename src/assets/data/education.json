@@ -1,0 +1,15 @@
+[
+  {
+    "id": 0,
+    "instituteName": "St. Joseph's Academy",
+    "url": "https://stjosephacademy.in/",
+    "location": "Dehradun, India",
+    "startDate": "2003",
+    "endDate": "2014",
+    "qualifications": [
+      { "title": "ISC (Class XII)", "score": "82.20%", "year": 2014 },
+      { "title": "ICSE (Class X)", "score": "88.71%", "year": 2012 }
+    ],
+    "logoUrl": "assets/images/sja.png"
+  }
+]
