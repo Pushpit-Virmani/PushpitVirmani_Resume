@@ -37,6 +37,24 @@
   </a>
   <a
     mat-list-item
+    [matTooltip]="'My Education'"
+    [matTooltipPosition]="'right'"
+    [routerLink]="['/education']"
+    class="inline-block"
+  >
+    <mat-icon
+      [color]="'primary'"
+      class="align-middle"
+      [ngClass]="{ 'mr-4': shouldDisplayLabels }"
+    >
+      school
+    </mat-icon>
+    <span *ngIf="shouldDisplayLabels" class="align-bottom mat-body-2 mr-6">
+      My Work
+    </span>
+  </a>
+  <a
+    mat-list-item
     [matTooltip]="'My Skills'"
     [matTooltipPosition]="'right'"
     [routerLink]="['/skills']"
