@@ -4,11 +4,10 @@
   <article>
     <ng-container *ngIf="education$ | async as education; else loading">
       <ng-container *ngIf="education.data && !education.error; else error">
-        <!-- <pv-exp-item
+        <pv-education-item
           *ngFor="let educationItem of education.data"
-          [expItem]="educationItem"
-        ></pv-exp-item> -->
-        <pre><code>{{education.data | json}}</code></pre>
+          [educationItem]="educationItem"
+        ></pv-education-item>
       </ng-container>
 
       <ng-template #error>Could not fetch education details.</ng-template>

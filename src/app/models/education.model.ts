@@ -8,6 +8,7 @@ export interface Education {
   id: number;
   instituteName: string;
   url?: string;
+  logoUrl: string;
   location: string;
   startDate: Date;
   endDate?: Date;
