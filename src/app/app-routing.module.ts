@@ -13,6 +13,13 @@ const routes: Routes = [
       import('./routes/my-work/my-work.module').then((u) => u.MyWorkModule),
   },
   {
+    path: 'education',
+    loadChildren: () =>
+      import('./routes/education/education.module').then(
+        (u) => u.EducationModule
+      ),
+  },
+  {
     path: 'home',
     redirectTo: '',
   },

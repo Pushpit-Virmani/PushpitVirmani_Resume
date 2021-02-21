@@ -1,0 +1,34 @@
+<div class="mb-12">
+  <div class="flex">
+    <div class="flex flex-col">
+      <img [src]="educationItem.logoUrl" width="80" height="80" class="p-2" />
+      <mat-divider vertical class="flex-grow w-50"></mat-divider>
+    </div>
+    <div class="ml-4">
+      <h2 class="mat-title mat-text-primary m-0">
+        <a pvExternalLink [href]="educationItem.url">{{
+          educationItem.instituteName
+        }}</a>
+      </h2>
+      <div class="mat-body mb-2">
+        {{ educationItem.location }} ({{ educationItem.startDate }} -
+        {{ educationItem.endDate || "Ongoing" }})
+      </div>
+
+      <ng-container *ngIf="educationItem.qualifications.length">
+        <div class="mat-body-2">Qualifications</div>
+        <ul class="list-disc ml-4">
+          <li
+            *ngFor="let qualification of educationItem.qualifications"
+            class="mat-caption mb-2"
+          >
+            <div class="mat-body">{{ qualification.title }}</div>
+            <small class="mat-caption">
+              {{ qualification.year }} - {{ qualification.score }}
+            </small>
+          </li>
+        </ul>
+      </ng-container>
+    </div>
+  </div>
+</div>

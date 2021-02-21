@@ -20,5 +20,8 @@
       "@pv-modules": ["src/app/modules/index.ts"],
       "@pv-tailwind-config": ["./tailwind.config.js"]
     }
+  },
+  "angularCompilerOptions": {
+    "strictTemplates": true
   }
 }

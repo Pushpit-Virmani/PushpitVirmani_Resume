@@ -1,0 +1,46 @@
+[
+  {
+    "id": 2,
+    "instituteName": "Management Development Institute",
+    "url": "https://www.mdi.ac.in/",
+    "location": "Gurgaon, India",
+    "startDate": "2020",
+    "qualifications": [
+      {
+        "title": "MBA (PGP-IB)",
+        "score": "Ongoing",
+        "year": 2020
+      }
+    ],
+    "logoUrl": "assets/images/mdi.jfif"
+  },
+  {
+    "id": 1,
+    "instituteName": "DIT University",
+    "url": "https://www.dituniversity.edu.in/",
+    "location": "Dehradun, India",
+    "startDate": "2014",
+    "endDate": "2018",
+    "qualifications": [
+      {
+        "title": "Bachelor of Technology (Computer Science)",
+        "score": "7.05 / 10",
+        "year": 2018
+      }
+    ],
+    "logoUrl": "assets/images/ditu.jpg"
+  },
+  {
+    "id": 0,
+    "instituteName": "St. Joseph's Academy",
+    "url": "https://stjosephacademy.in/",
+    "location": "Dehradun, India",
+    "startDate": "2003",
+    "endDate": "2014",
+    "qualifications": [
+      { "title": "ISC (Class XII)", "score": "82.20%", "year": 2014 },
+      { "title": "ICSE (Class X)", "score": "88.71%", "year": 2012 }
+    ],
+    "logoUrl": "assets/images/sja.png"
+  }
+]
